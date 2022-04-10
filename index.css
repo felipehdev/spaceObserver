@@ -1,0 +1,48 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+:root {
+    --color-one: #527792;
+    --color-two: #F2CF1D;
+    --color-three: #F2EDD5;
+    --color-four: #D91604;
+    --color-five: #E85E1F;
+}
+nav {
+    position: fixed;        
+    display: flex;
+    justify-content: center;
+    height: 70px;
+    width: 100%;  
+}
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    width: 900px;    
+}
+
+section {
+    min-height: 100vh;
+    background-color: #F2CF1D;
+}
+
+/*CALENDARIO DIV */
+.calendar-ctn {
+    display: flex;
+    position: absolute;
+    left: 100px;
+    bottom: 200px;
+    
+    width: 700px;
+    height: 200px;
+    background-color: #F2EDD5;
+}
+.calendar-p {
+    width: 60%;
+}
