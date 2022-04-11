@@ -2,7 +2,7 @@
     padding: 0px;
     margin: 0px;
     border: 0px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 :root {
@@ -12,12 +12,15 @@
     --color-four: #D91604;
     --color-five: #E85E1F;
 }
+body {
+    max-height: 100vh;
+}
 nav {
     position: fixed;        
     display: flex;
     justify-content: center;
     height: 70px;
-    width: 100%;  
+    width: 100vw;  
 }
 .navbar {
     display: flex;
@@ -26,23 +29,81 @@ nav {
     height: 70px;
     width: 900px;    
 }
+.logo {
+    color: white;
+    text-shadow: 0rem 2px 2rem #000000;
+}
 
 section {
-    min-height: 100vh;
+    height: 100vh;    
     background-color: #F2CF1D;
+    overflow: hidden;
+    box-shadow: 0px -26px 30px -16px black inset;
+    
+}
+
+.bg-img {
+    z-index: -1;
+    min-width: 100vw;    
+    min-height: 100vh;
+    height: auto;
+}
+.bottom-shadow {
+    position: absolute;
+    bottom: 0px;
+    z-index: 99;     
+    box-shadow: 0px -26px 30px -16px inset;
 }
 
 /*CALENDARIO DIV */
-.calendar-ctn {
+.calendar-div {
     display: flex;
     position: absolute;
+    align-items: center;
+    justify-content: space-around;
     left: 100px;
-    bottom: 200px;
+    bottom: 100px;
     
     width: 700px;
-    height: 200px;
+    height: 150px;
     background-color: #F2EDD5;
 }
 .calendar-p {
     width: 60%;
+}
+.h-line {
+    height: 80%;
+    width: 1px;
+    background-color: #527792;
+}
+.calendar-ctn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: fit-content;
+}
+#calendar {
+    text-align: center;
+    height: 2rem;
+    width: 150px;
+    padding: 0.2rem;
+}
+#submit {
+    margin-top: 1rem;
+    height: 2rem;
+}
+.img-p-ctn {
+    max-height: 100vh;
+    display: flex;
+    position: absolute;
+    bottom: 100px;
+    right: 100px;
+    width: 700px;    
+    align-items: center;    
+}
+.img-p {
+    text-align: right;
+    background-color: #000000;
+    color: #F2EDD5;
+    
 }
