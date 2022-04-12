@@ -1,0 +1,111 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: 1440px) {
+  .calendar-div {
+    left: 50px;
+    bottom: 100px;
+
+    width: 550px;
+    height: 120px;
+  }
+  .img-p-ctn {
+    box-sizing: border-box;
+    right: 50px;
+    bottom: 100px;
+    width: 550px;
+    height: fit-content;
+  }
+  .img-p {
+      box-sizing: border-box;
+      padding: 1rem;
+  }
+}
+
+@media (max-width: 1024px) {
+    .calendar-div {
+        flex-direction: column;
+        box-sizing: border-box;
+        padding: 1rem;
+        width: 300px;
+        height: fit-content;
+        left: 30px;
+        bottom: 30px;
+    }
+    .calendar-p {
+        width: 100%;
+    }
+    .h-line {
+        margin: .5rem auto;
+        align-self: center;
+        width: 100%;
+        height: 1px;
+    }
+    .calendar-ctn {
+        width: 100%;
+    }
+    #calendar {
+        width: 97%;
+    }
+    .img-p-ctn {
+        right: 30px;
+        bottom: 30px;
+    }
+}
+@media (max-width: 768px) {
+    .calendar-div {
+        bottom: 30px;
+        width: 70%;
+        right: 15%;
+        left: 15%;
+    }
+    .calendar-p {
+        text-align: center;
+    }
+    .calendar-ctn {
+        flex-direction: row;
+        align-items: center;
+        width: 100%;        
+    }
+    #calendar {
+        width: 60%;
+    }
+    #submit {
+        width: 30%;
+        height: 2.2rem;
+        margin-top: 0;
+    }
+
+    .img-p-ctn {
+        box-sizing: border-box;
+        bottom: 175px;
+        width: 70%;        
+        left: 15%;
+        height: fit-content;
+      }
+      .img-p {
+          text-align: center;
+          box-sizing: border-box;
+          padding: 1rem;
+      }
+}
+@media (max-width: 500px) {
+    .img-p-ctn {
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        width: 90%;
+        bottom: 200px;
+    }
+    .calendar-div {
+        width: 90%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+}
+
