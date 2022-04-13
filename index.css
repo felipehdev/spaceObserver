@@ -41,7 +41,13 @@ section {
   box-shadow: 0px -26px 30px -16px black inset;
 }
 
-.bg-img {
+#bgImg {
+  z-index: -1;
+  min-width: 100vw;
+  min-height: 100vh;
+  height: auto;
+}
+#video {
   z-index: -1;
   min-width: 100vw;
   min-height: 100vh;
@@ -100,7 +106,7 @@ section {
   width: 700px;
   align-items: center;
 }
-.img-p {
+#img-p {
   text-align: right;
   background-color: #000000;
   color: #f2edd5;

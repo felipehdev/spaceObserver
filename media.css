@@ -20,7 +20,7 @@
     width: 550px;
     height: fit-content;
   }
-  .img-p {
+  #img-p {
       box-sizing: border-box;
       padding: 1rem;
   }
@@ -87,7 +87,7 @@
         left: 15%;
         height: fit-content;
       }
-      .img-p {
+      #img-p {
           text-align: center;
           box-sizing: border-box;
           padding: 1rem;
