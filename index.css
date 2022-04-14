@@ -11,6 +11,8 @@
   --color-three: #f2edd5;
   --color-four: #d91604;
   --color-five: #e85e1f;
+  --color-six: #000000;
+  --color-seven: #f0f0f0;
 }
 body {
   max-height: 100vh;
@@ -24,40 +26,51 @@ nav {
 }
 .navbar {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 70px;
   width: 900px;
 }
+h3 {
+  margin-top: 0.2rem;
+  width: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+a {
+  text-decoration: none; 
+  font-size: 0.6rem;
+  color: var(--color-seven);
+}
+a:hover {
+  cursor: pointer;
+}
 .logo {
-  color: white;
-  text-shadow: 0rem 2px 2rem #000000;
+  color: var(--color-seven);
+  text-shadow: 0rem 2px 2rem var(--color-seven);
+}
+.logo-emj {
+  font-size: 2rem;
 }
 
 section {
   height: 100vh;
-  background-color: #f2cf1d;
+  background-color: var(--color-six);
   overflow: hidden;
-  box-shadow: 0px -26px 30px -16px black inset;
 }
 
 #bgImg {
+  align-content: center;
+  margin: 0 auto;
   z-index: -1;
   min-width: 100vw;
   min-height: 100vh;
-  height: auto;
 }
 #video {
   z-index: -1;
   min-width: 100vw;
   min-height: 100vh;
-  height: auto;
-}
-.bottom-shadow {
-  position: absolute;
-  bottom: 0px;
-  z-index: 99;
-  box-shadow: 0px -26px 30px -16px inset;
 }
 
 /*CALENDARIO DIV */
@@ -71,15 +84,17 @@ section {
 
   width: 700px;
   height: 150px;
-  background-color: #f2edd5;
+  background-color: var(--color-six);
+  border-radius: 2px;
 }
 .calendar-p {
   width: 60%;
+  color: var(--color-seven);
 }
 .h-line {
   height: 80%;
   width: 1px;
-  background-color: #527792;
+  background-color: var(--color-seven);
 }
 .calendar-ctn {
   display: flex;
@@ -92,22 +107,51 @@ section {
   height: 2rem;
   width: 150px;
   padding: 0.2rem;
+  border-radius: 2px;
 }
 #submit {
   margin-top: 1rem;
   height: 2rem;
+  background-color: var(--color-four);
+  color: var(--color-three);
+  border-radius: 2px;
 }
+#submit:hover {
+  align-self: center;
+  transition: 0.2s;
+  width: 99.5%;  
+  color: var(--color-seven);
+  background-color: var(--color-five);
+  cursor: pointer;
+  
+}
+
+/*DESCRICÃO DA IMAGEM */
 .img-p-ctn {
   max-height: 100vh;
   display: flex;
+  align-items: flex-end;
   position: absolute;
   bottom: 100px;
   right: 100px;
   width: 700px;
-  align-items: center;
+}
+#imgTitle {
+  max-height: 250px;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--color-seven);
+  text-shadow: -3px 2px #3d3d3d;
 }
 #img-p {
-  text-align: right;
-  background-color: #000000;
-  color: #f2edd5;
+  text-align: justify;
+  box-sizing: border-box;
+  background-color: var(--color-six);
+  color: var(--color-seven);
+  border-radius: 2px;
+  padding: 1rem;
+  padding-left: 1.5rem;
+  
 }
