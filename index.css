@@ -117,12 +117,10 @@ section {
   border-radius: 2px;
 }
 #submit:hover {
-  align-self: center;
   transition: 0.2s;
   color: var(--color-seven);
   background-color: var(--color-five);
-  cursor: pointer;
-  
+  cursor: pointer;  
 }
 
 /*DESCRICÃO DA IMAGEM */
