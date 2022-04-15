@@ -130,7 +130,7 @@ section {
 .img-p-ctn {
   max-height: 100vh;
   display: flex;
-  align-items: flex-end;
+  align-items: flex-end;  
   position: absolute;
   bottom: 100px;
   right: 100px;
